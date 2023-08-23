@@ -291,7 +291,7 @@ section.hero .inner-hero {
     color: #ffffff;
     position: relative;
     text-align: center;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -300,8 +300,8 @@ section.hero .inner-hero {
 }
 h1.large {
     color: #ffffff;
-    font-size: 100px;
-    text-transform: uppercase;
+    font-size: 80px;
+    /* text-transform: uppercase; */
 }
 .block-date-hero {
     position: relative;
@@ -497,6 +497,7 @@ h1.large {
 
 .block-event {
     border: 20px solid #b0f2d3;
+    border-radius: 55px;
     padding: 50px 0;
     box-shadow: 0 0 20px rgba(53, 48, 49, 0.15);
     -webkit-box-shadow: 0 0 20px rgba(53, 48, 49, 0.15);
@@ -512,11 +513,11 @@ h1.large {
 }
 .block-event p {
     color: #353031;
-    font-size: 16px;
+    font-size: 26px;
 }
 .block-event p span {
     display: block;
-    font-size: 14px;
+    font-size: 20px;
 }
 /* End events section*/
 
@@ -1100,3 +1101,125 @@ blockquote {
     }
 }
 /*End media queries*/
+
+
+.carousel-container {
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 0 30px -20px #223344;
+    margin: auto;
+    z-index: 0;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .mySlides img {
+    display: block;
+    width: 100%;
+  }
+  
+  /* image gradient overlay [optional] */
+  /*  .mySlides::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+      background-image: linear-gradient(-45deg, rgba(110, 0, 255, .1), rgba(70, 0, 255, .2));
+  } */
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: auto;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 8px 8px 0;
+    background: rgba(173, 216, 230, 0.1);
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(173, 216, 230, 0.3);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    background-color: rgba(10, 10, 20, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .number {
+    color: #f2f2f2;
+    font-size: 16px;
+    background-color: rgba(173, 216, 230, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dots {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 0 4px;
+    background-color: rgba(173, 216, 230, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .active,
+  .dots:hover {
+    background-color: rgba(173, 216, 230, 0.8);
+  }
+  
+  /* transition animation */
+  .animate {
+    -webkit-animation-name: animate;
+    -webkit-animation-duration: 1s;
+    animation-name: animate;
+    animation-duration: 2s;
+  }
+  
+  @keyframes animate {
+    from {
+      transform: scale(1.1) rotateY(10deg);
+    }
+    to {
+      transform: scale(1) rotateY(0deg);
+    }
+  }
+  

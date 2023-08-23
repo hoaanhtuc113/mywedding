@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
       <!-- Metas -->
       <meta charset="utf-8">
-      <title>DESTINY - WEDDING HTML TEMPLATE</title>
+      <title>WEDDING</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Css -->
@@ -11,7 +11,10 @@
       <link href="css/venobox.css" rel="stylesheet" type="text/css" media="all">
       <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all">
       <link href="https://fonts.googleapis.com/css?family=Kristi|Lato:100,300,300i,400,700" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">   <body>
+      <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">   
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Thasadith&display=swap" rel="stylesheet">
+   
+<body>
       <!-- Preloader -->
       <div class="loader">
          <!-- Preloader inner -->
@@ -63,7 +66,7 @@
                   <!--Row-->
                   <div class="row">
                      <div class="col-sm-12 text-center">
-                        <h1 class="large mb-20">Tuấn Anh &amp; Phạm Hậu</h1>
+                        <h1 class="large mb-20">Tuấn Anh <br> ♥ <br>Phạm Hậu</h1>
                         <div class="block-date-hero">
                            <div class="circle-dashed bg-n">
                               <div class="round-circle">
@@ -88,18 +91,73 @@
             <!--End inner hero-->
          </section>
          <!--End hero section-->
+
+         <!--Album section-->
+         
+         <section id="album" class="album bg-grey pt-120 pb-120" style="display:none">
+            
+         </section>
+         <!--End album section-->
+
          <!--Wedding section-->
          <section id="wedding" class="wedding pt-120 pb-120">
             <!--Container-->
             <div class="container">
                <!--Row-->
-               <div class="row">
-                  <div class="col-sm-12 text-center mb-100">
+               <div class="row mb-15">
+                  <div class="col-sm-12 text-center">
                      <h1 class="title">Wedding events</h1>
-                     <p>Main ceremony - Wedding party</p>
                   </div>
                </div>
                <!--End row-->
+
+               <!--Container-->
+            <!-- Full-width images with number and caption text -->
+            <div class="carousel-container mb-15">
+               <div class="mySlides animate">
+               <img src="/img/slide/1.jpg" alt="slide" />
+               <div class="number">1 / 5</div>
+               <!-- <div class="text">Lorem ipsum dolor sit amet consectetur</div> -->
+               </div>
+            
+               <div class="mySlides animate">
+               <img src="/img/slide/2.jpg" alt="slide" />
+               <div class="number">2 / 5</div>
+               <!-- <div class="text">amet consectetur</div> -->
+               </div>
+            
+               <div class="mySlides animate">
+               <img src="/img/slide/3.jpg" alt="slide" />
+               <div class="number">3 / 5</div>
+               <!-- <div class="text">Lorem ipsum dolor sit</div> -->
+               </div>
+            
+               <div class="mySlides animate">
+               <img src="/img/slide/4.jpg" alt="slide" />
+               <div class="number">4 / 5</div>
+               <!-- <div class="text">Doloribus quo alias reprehenderit</div> -->
+               </div>
+            
+               <div class="mySlides animate">
+               <img src="/img/slide/5.jpg" alt="slide" />
+               <div class="number">5 / 5</div>
+               <!-- <div class="text">Reprehenderit</div> -->
+               </div>
+            
+               <!-- Next and previous buttons -->
+               <a class="prev" onclick="prevSlide()">&#10094;</a>
+               <a class="next" onclick="nextSlide()">&#10095;</a>
+            
+               <!-- The dots/circles -->
+               <div class="dots-container">
+               <span class="dots" onclick="currentSlide(1)"></span>
+               <span class="dots" onclick="currentSlide(2)"></span>
+               <span class="dots" onclick="currentSlide(3)"></span>
+               <span class="dots" onclick="currentSlide(4)"></span>
+               <span class="dots" onclick="currentSlide(5)"></span>
+               </div>
+            </div>
+
                <!--Row-->
                <div class="row">
                   <div class="col-sm-5 col-sm-offset-1 text-center">
@@ -112,8 +170,8 @@
                               <i class="icon-heart"></i>
                            </div>
                         </div>
-                        <p class="mt-30 mb-30">Nhà Trai<span>16:00h - 17:00</span></p>
-                        <p>Address<span>Nhà hàng Mường Thanh<br>113 Lê Duẩn, Tân Phong, Lai Châu</span></p>
+                        <p class="mt-30 mb-30">Nhà Trai<span>11:00h <br>24/09/2023</span></p>
+                        <p><span>Đường Hoàng Quốc Việt<br>P Tân Phong, Lai Châu</span></p>
                      </div>
                   </div>
                   <div class="col-sm-5 text-center">
@@ -126,8 +184,8 @@
                               <i class="icon-heart"></i>
                            </div>
                         </div>
-                        <p class="mt-30 mb-30">Nhà Gái<span>17:00h - 18:00</span></p>
-                        <p>Address<span>28 Chalmers Street <br>Sydney</span></p>
+                        <p class="mt-30 mb-30">Nhà Gái<span>8:30h <br>23/09/2023</span></p>
+                        <p><span>Đội 2, Thôn Đặng Cầu <br>Xã Trung Nghĩa, TP Hưng Yên</span></p>
                      </div>
                   </div>
                </div>
@@ -135,7 +193,7 @@
                <!--Row-->
                <div class="row">
                   <div class="col-sm-8 col-sm-offset-2 text-center">
-                     <p class="lead mt-80 size-m">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occae.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. </p>
+                     <p class="mt-80" style="font-size:30px">Hẹn bạn một buổi gặp gỡ trăm năm không say không về!</p>
                      <a href="#rsvp" class="but mt-40 scroll">
                         <span>Đăng ký</span>
                         <svg class="but-svg" width="143" height="50" viewBox="0 0 230 120" xmlns="http://www.w3.org/2000/svg">
@@ -175,79 +233,6 @@
          </section>
          <!--End date section-->
          
-         <!--Album section-->
-         
-         <section id="album" class="album bg-grey pt-120 pb-120" style="display:none">
-            <!--Container-->
-            <div class="container">
-               <!--Row-->
-               <div class="row mb-30">
-                     <!-- As a general rule, include a heading (h1-h6) as a child of each section and article element for screen readers purposes-->
-                     <h2 class="indent">Photo album</h2>
-                  <div class="col-md-4 col-sm-4 col-xs-12 ">
-                     <div class="block-img">
-                        <a href="img/6.jpg" class="venobox">
-                           <div class="background-img">
-                              <img alt="" src="img/6.jpg">
-                           </div>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12 ">
-                     <div class="block-img">
-                        <a href="img/7.jpg" class="venobox">
-                           <div class="background-img">
-                              <img alt="" src="img/7.jpg">
-                           </div>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12 ">
-                     <div class="block-img">
-                        <a href="img/8.jpg" class="venobox">
-                           <div class="background-img">
-                              <img alt="" src="img/8.jpg">
-                           </div>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <!--End row-->	
-               <!--Row-->
-               <div class="row ">
-                  <div class="col-md-4 col-sm-4 col-xs-12 ">
-                     <div class="block-img">
-                        <a href="img/9.jpg" class="venobox">
-                           <div class="background-img">
-                              <img alt="" src="img/9.jpg">
-                           </div>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12 ">
-                     <div class="block-img">
-                        <a href="img/10.jpg" class="venobox">
-                           <div class="background-img">
-                              <img alt="" src="img/10.jpg">
-                           </div>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12 ">
-                     <div class="block-img">
-                        <a href="img/11.jpg" class="venobox">
-                           <div class="background-img">
-                              <img alt="" src="img/11.jpg">
-                           </div>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <!--End row-->
-            </div>
-            <!--End container-->
-         </section>
-         <!--End album section-->
          <!--Album section-->
          <section id="gift" class="gift  pt-120 pb-120 mb-100" style="display:none"> 
             <!--Container-->

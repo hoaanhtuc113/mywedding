@@ -175,8 +175,8 @@ iframe {
 
 body {
     background: #ffffff;
-    font-family: "Thasadith", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    color: #757575;
+    font-family: "Dancing Script", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    /* color: #757575; */
     margin: 0;
     font-size: 20px;
     font-weight: 900;
@@ -292,7 +292,7 @@ p.heavy.normal {
     font-size: 17px;
 }
 .heavy span {
-    color: #757575;
+    /* color: #757575; */
     font-size: 14px;
     display: block;
     margin-top: 5px;
