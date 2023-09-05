@@ -135,7 +135,7 @@ $(document).ready(function () {
               if (data === 'false') {
                   alert('Error');
               } else {
-                  window.location.href = "/thankyou.html";
+                  window.location.href = "thankyou.html";
               }
           }
       });
