@@ -674,6 +674,7 @@ blockquote {
     resize: none;
     width: 100%;
     height: 42px;
+    font-family: 'Thasadith' !important;
 }
 .registry-form select {
     -webkit-appearance: none;

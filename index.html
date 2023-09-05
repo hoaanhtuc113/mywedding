@@ -170,8 +170,8 @@
                               <i class="icon-heart"></i>
                            </div>
                         </div>
-                        <p class="mt-30 mb-30">Nhà Trai<span>11:00h <br>24/09/2023</span></p>
-                        <p><span>Đường Hoàng Quốc Việt<br>P Tân Phong, Lai Châu</span></p>
+                        <p class="mt-30 mb-30">Nhà Trai<span>18:00h <br>23/09/2023</span></p>
+                        <p><span>51 Đường Hoàng Quốc Việt, <br>Phường Tân Phong, TP Lai Châu</span></p>
                      </div>
                   </div>
                   <div class="col-sm-5 text-center">
@@ -193,11 +193,11 @@
                <!--Row-->
                <div class="row">
                   <div class="col-sm-8 col-sm-offset-2 text-center">
-                     <p class="mt-80" style="font-size:30px">Hẹn bạn một buổi gặp gỡ trăm năm không say không về!</p>
+                     <p class="mt-80" style="font-size:30px">Hẹn bạn tại buổi gặp gỡ trăm năm, không say không về!</p>
                      <a href="#rsvp" class="but mt-40 scroll">
-                        <span>Đăng ký</span>
-                        <svg class="but-svg" width="143" height="50" viewBox="0 0 230 120" xmlns="http://www.w3.org/2000/svg">
-                           <rect class="but-rect" x="10" y="10" width="210" height="100" rx="6" ry="6"></rect>
+                        <p>Đăng ký di chuyển</p>
+                        <svg class="but-svg" width="343" height="50" viewBox="0 0 430 120" xmlns="http://www.w3.org/2000/svg">
+                           <rect class="but-rect" x="0" y="10" width="430" height="100" rx="6" ry="6"></rect>
                         </svg>
                      </a>
                   </div>
@@ -222,7 +222,8 @@
                      <div class="block-content front-p">
                         
                         <h2 class="typo">Save the date</h2>
-                        <p class="lead mt-20 text-white">Chủ nhật, 24/04/2023 - Nhà hàng Mường Thanh</p>
+                        <p class="lead mt-20 text-white">Chủ nhật, 24/09/2023 - Nhà hàng Mường Thanh <br>Số 113, đường Lê Duẩn, phường Tân Phong<br>TP.Lai Châu</p>
+                        
                         <span class="countdown text-white"></span>
                      </div>
                   </div>
@@ -357,36 +358,40 @@
                <div class="row vertical-align">
                   <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 ">
                      <h1 class="title">Đăng ký</h1>
-                     <p class="mt-20 pd-r20">The best present you could possibly give us is you<br> attending of our marriage. However, if you’d like to honor<br> us we’ve picked out a few choices, activities, and charities<br> that meet your interests.</p>
+                     <p class="mt-20 pd-r20" style="font-style: italic;">"The best present you could possibly give us is your attendance at our marriage. <br>However, we understand that life's commitments and distances can sometimes make it challenging to be with us on this special day. While it would bring us immense joy to have you there, please know that if circumstances prevent you from attending, we completely understand and your absence won't diminish our happiness. 💓"</p>
                   </div>
                   <div class="col-md-7 col-sm-7 ">
                      <div class="block-registry">
-                        <h2 class="heavy normal mb-30">Các bạn có thể đăng ký di chuyển để chúng tớ chuẩn bị phương tiện và đón tiếp mọi người nhé</h2>
-                        <form class="registry-form " method="post" action="#">
-                           <input placeholder="Tên của bạn" value="" id="name" name="name" type="text">
+                        <p class="heavy normal mb-30">Các bạn có thể đăng ký di chuyển để chúng tớ chuẩn bị phương tiện và đón tiếp mọi người nhé</p>
+                        <form class="registry-form" id="registry-form" method="get" action="#">
+                           <input placeholder="Tên của bạn" value="" id="name" name="Ten" type="text">
                            <!--Input columns-->
                            <div class="input-columns clearfix">
                               <div class="column-1">
                                  <div class="column-inner">
-                                    <input placeholder="Số điện thoại" value="" id="Guest" name="guest" type="text">
+                                    <input placeholder="Số điện thoại" value="" id="Guest" name="SDT" type="text">
                                  </div>
                               </div>
                               <!--Column-->
                               <div class="column-2">
-                                 <div class="column-inner select-input">
-                                    <select>
-                                       <option value="">Chọn một phương án</option>
-                                       <option value="1">Tham dự ở Hưng Yên</option>
-                                       <option value="2">Tham dự ở Lai Châu</option>
-                                       <option value="3">Cứ hồi HY-LC</option>
-                                       <option value="4">Không có mặt được</option>
-                                    </select>
-                                 </div>
+                                 <input placeholder="Số người" value="" id="name" name="So-Nguoi" type="text">
                               </div>
                               <!--End column-->
                            </div>
+                           
+                           <div class="column-inner select-input">
+                              <select name="Option">
+                                 <option value="">Chọn một phương án</option>
+                                 <option value="1">Tham dự ở Hưng Yên</option>
+                                 <option value="2">Tham dự ở Lai Châu</option>
+                                 <option value="3">Cả 2 đáp án trên</option>
+                                 <option value="4">Không có mặt được</option>
+                              </select>
+                           </div>
+                           <br>
                            <!--End input columns-->
-                           <input value="Gửi thông tin" class=" but submit" type="submit">
+                           <!-- <button value="Gửi thông tin" name="submit" class="but submit"> -->
+                           <button class="but submit" name="submit">Send</button>
                         </form>
                      </div>
                   </div>
@@ -423,7 +428,7 @@
                <!--Row-->
                <div class="row">
                   <div class="col-sm-12 text-center">
-                     <p class="uppercase heavy normal">© 2023 TPBank|Momo =))) - 0968166240.</p>
+                     <p class="uppercase heavy normal">© 2023 [TPBank|Momo] Cho những ai cần <3 - 0968166240.</p>
                   </div>
                </div>
                <!--End row-->

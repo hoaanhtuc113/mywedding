@@ -96,3 +96,70 @@ setInterval(() => {
     timer = _timer; // reset timer
   }
 }, 1000); // 1sec
+
+
+$(document).ready(function () {
+  var submit = $("button[name='submit']");
+  submit.click(function () {
+      console.log("Hehe")
+      var data = $('form#registry-form').serialize();
+
+      // Validate the form
+      var isValid = validateForm("registry-form");
+      if (!isValid) {
+          return false;
+      }
+
+      // Show the loading page
+      // Show the loading animation
+      $(".page-preloader").fadeIn(function () {
+          // After fading in, add dynamic content
+          var dynamicContent = '<div class="page-preloader preloader-wrapp">' +
+              '<img src="assets/images/logo-light.png" alt="">' +
+              '<div class="preloader"></div>' +
+              '</div>';
+
+          // Append dynamic content after the preloader
+          $(this).after(dynamicContent);
+      });
+
+      // Send form data to Google Apps Script
+      $.ajax({
+          type: 'POST',  // Change the method to POST
+          url: 'https://script.google.com/macros/s/AKfycbzjZ-hqBsLIZboZZk1X1y5mk-Fju9TFoYPhg42ufbgB7h65xPqk-Fk_IL5V0m2PmcyD1w/exec',
+          dataType: 'json',
+          data: data,
+          success: function (data) {
+              $(".page-preloader").fadeOut();
+
+              if (data === 'false') {
+                  alert('Error');
+              } else {
+                  window.location.href = "/thankyou.html";
+              }
+          }
+      });
+
+      return false;
+  });
+
+  // Other parts of your code
+
+  function validateForm(formId) {
+      var form = document.forms[formId];
+      var Ten = form["Ten"].value;
+      var Sodienthoai = form["SDT"].value;
+  
+      if (Ten.trim() === "") {
+          alert('Điền tên để mình còn biết ai đăng ký chứ');
+          return false;
+      }
+  
+      if (Sodienthoai.trim() === "") {
+          alert('Còn số điện thoại sẽ để mình liên lạc khi đưa đón');
+          return false;
+      }
+  
+      return true; // Return true if the form is valid
+  }
+});

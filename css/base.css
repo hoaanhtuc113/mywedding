@@ -286,7 +286,7 @@ section,
     font-size: 14px;
 }
 p.heavy.normal {
-    font-size: 13px;
+    font-size: 17px;
 }
 .heavy {
     font-size: 17px;
@@ -305,6 +305,10 @@ h2.typo{
 	color:#ffffff;
 	line-height:1;
 	font-size: 130px;
+}
+
+p {
+    font-family: 'Thasadith' !important;
 }
 
 .circle-dashed.bg,
