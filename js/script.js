@@ -100,6 +100,8 @@ setInterval(() => {
 
 $(document).ready(function () {
   var submit = $("button[name='submit']");
+  var loadingScreen = $(".loader");
+  var loaderInner = $(".loader-inner");
   submit.click(function () {
       console.log("Hehe")
       var data = $('form#registry-form').serialize();
@@ -110,18 +112,9 @@ $(document).ready(function () {
           return false;
       }
 
-      // Show the loading page
-      // Show the loading animation
-      $(".page-preloader").fadeIn(function () {
-          // After fading in, add dynamic content
-          var dynamicContent = '<div class="page-preloader preloader-wrapp">' +
-              '<img src="assets/images/logo-light.png" alt="">' +
-              '<div class="preloader"></div>' +
-              '</div>';
-
-          // Append dynamic content after the preloader
-          $(this).after(dynamicContent);
-      });
+      // Show the loading screen
+      loadingScreen.show();
+      loaderInner.show();
 
       // Send form data to Google Apps Script
       $.ajax({
@@ -130,7 +123,9 @@ $(document).ready(function () {
           dataType: 'json',
           data: data,
           success: function (data) {
-              $(".page-preloader").fadeOut();
+
+              loadingScreen.hide();
+              loaderInner.hide();
 
               if (data === 'false') {
                   alert('Error');
